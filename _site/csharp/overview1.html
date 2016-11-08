@@ -1,0 +1,210 @@
+﻿<!DOCTYPE HTML>
+<!--
+    Read Only by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Theodore</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <header>
+            <span class="image avatar"><img src="../images/shiina.jpeg" alt="" /></span>
+            <h1 id="logo"><a href="#">Theodore Li</a></h1>
+            <p>一个初学者的历程</p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#one" class="active">Text</a></li>
+                <!--<li><a href="#two">CSharp</a></li>
+                <li><a href="#three">Data Structure</a></li>
+                <li><a href="#four">Article</a></li>
+                <!--<li><a href="#four">Contact</a></li>-->
+            </ul>
+        </nav>
+        <footer>
+            <ul class="icons">
+                <li><a href="https://twitter.com/nUpIwVOx3oJjNCv" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100010254727021" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.instagram.com/theodore_lr/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/TheodoreLR" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </footer>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section id="one">
+                <div class="container">
+                    <header class="major">
+                        <h2>C#概述(一)</h2>
+                        <p>根据我看书的情况大致写了一点C#的特点，后期会有专题详细讲解一些内容</p>
+                    </header>
+                    <div class="big 12u(xsmall)">
+                        <h4>程序结构</h4>
+                        <ul>
+                            <li>C#程序由一个或多个源文件组成。</li>
+                            <li>程序->类型->成员，可按命名空间进行组织。</li>
+                            <li>类与接口是类型的示例;字段、方法、属性、事件是成员的示例。</li>
+                            <li>C#编译时将所有源文件一起处理。</li>
+                        </ul>
+                        <h4>类型与变量</h4>
+                        <ul>
+                            <li>值类型：每个变量（除ref和out）都有自己的数据副本，对一个变量的操作不可能影响另一个变量。</li>
+                            <li>引用类型：变量存储对它们的数据的引用，可能两个引用类型变量存储相同数据的引用，即改变一个会改变另一个。</li>
+                            <li>使用类型声明创建新的类型，共有五种用户可定义类型。（详见C#教程，此处不赘述）</li>
+                        </ul>
+                        <h4>类和对象</h4>
+                        <p>类是最基础的C#类型。是一个数据结构，将状态和操作组合在一个单元中。使用new运算符创建它的实例。</p>
+                        <ul>
+                            <li>
+                                <h4>成员</h4>
+                                <ul>
+                                    <li>静态成员（属于类）与实例成员（属于对象）。</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>可访问性</h4>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>可访问性</th>
+                                                <th>含义</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>public</td>
+                                                <td>访问不受限制</td>
+                                            </tr>
+                                            <tr>
+                                                <td>protected</td>
+                                                <td>访问仅限于此类或从此类派生的类</td>
+                                            </tr>
+                                            <tr>
+                                                <td>internal</td>
+                                                <td>访问仅限于此程序</td>
+                                            </tr>
+                                            <tr>
+                                                <td>protected internal</td>
+                                                <td>访问仅限于此程序或从此类派生的类</td>
+                                            </tr>
+                                            <tr>
+                                                <td>private</td>
+                                                <td>访问仅限于此类</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>基类</h4>
+                                <ul>
+                                    <li>类名或类型参数后面添加一个冒号和基类的名称来指定一个基类。不声明则基类是object。</li>
+                                    <li>类继承基类成员，隐式地将其基类成员当作自己地成员（除个别构造函数）。</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>方法</h4>
+                                <p>静态方法通过类访问，实例方法通过累的实例来访问。</p>
+                                <p>方法签名（命名）同其它语言一样在文件中必须唯一。</p>
+                                <ul>
+                                    <li>
+                                        <h4>参数</h4>
+                                        <ul>
+                                            <li>引用参数，与实参变量储存位置相同，修饰符为ref。</li>
+                                            <li>输出参数，与引用参数类似，但实参初始值不重要，修饰符为out。</li>
+                                            <li>参数数组，允许向方法传递可变数量的实参。例如WriteLine方法与Write方法：<br />
+                                            <pre><code>public class Console
+{
+       public static void Write(string fmt, params object[] args) {...}
+       public static void WriteLine(string fmt, params object[] args) {...}
+       ...
+}                                           </code></pre><br />其中若用户使用语句如下：<br />
+                                            <pre><code>       Console.WriteLine("x={0} y={1} z={2}", x, y, z);</code></pre>
+                                            <br />则等价于：<br />
+                                            <pre><code>       string s = "x={0} y={1} z={2}";
+       object[] args = new object[3];
+       args[0] = x;
+       args[1] = y;
+       args[2] = z;
+       Console.WriteLine(s, args);             </code></pre>
+                                            </li>
+                                         </ul>
+                                    </li>
+                                    <li>
+                                        <h4>方法体和局部变量</h4>
+                                        <ul>
+                                            <li>方法体指定了在调用该方法时将执行的语句。</li>
+                                            <li>局部变量就是仅在某方法中使用的变量。</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>静态方法和实例方法</h4>
+                                        <ul>
+                                            <li>静态方法不对特定实例进行操作，并且只能直接访问静态成员。</li>
+                                            <li>实例方法对特定实例进行操作，并且能够访问静态成员和实例成员。</li>
+                                            <li>静态方法中不能引用this</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>虚方法、重写方法和抽象方法</h4>
+                                        <p>有些复杂此处不展开说明...</p>
+                                    </li>
+                                    <li>
+                                        <h4>方法重载</h4>
+                                        <p>同一类中的多个方法具有相同名称但传入的数据不同。编译器可根据传入数据重载方法以达到使用者目的。</p>
+                                        <p>注：在传入参数时有时需要显式转换参数类型</p>
+                                    </li>
+                                    <li>
+                                        <h4>其它函数成员</h4>
+                                        <p>略...</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p><a href="../index.html" class="button special">Home Page</a></p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <ul class="copyright">
+                    <li>Theodore Li</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollzer.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/skel.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>
